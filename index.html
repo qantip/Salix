@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salix</title>
+  <meta name="description" content="Learn the Russian and Ukrainian Cyrillic alphabet.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Serif:ital,wght@0,400;1,400&family=Marck+Script&family=Bad+Script&family=IBM+Plex+Mono:wght@400&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#161616">
+  <link rel="icon" href="icon-192.png">
+</head>
+<body>
+  <header class="shell">
+    <a class="shell__name" href="#/learn"><b>Salix</b>&nbsp;Cyrillic trainer</a>
+    <nav class="shell__nav" aria-label="Main">
+      <a class="shell__link" data-route="learn" href="#/learn">Learn</a>
+      <a class="shell__link" data-route="quiz-cyr" href="#/quiz-cyr">Cyrillic → Latin</a>
+      <a class="shell__link" data-route="quiz-lat" href="#/quiz-lat">Latin → Cyrillic</a>
+      <a class="shell__link" data-route="stats" href="#/stats">Statistics</a>
+      <a class="shell__link" data-route="settings" href="#/settings">Settings</a>
+    </nav>
+  </header>
+  <main id="main" class="page" tabindex="-1"></main>
+  <div id="modal-root"></div>
+  <script src="app.js"></script>
+  <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');</script>
+</body>
+</html>
